@@ -36,8 +36,10 @@ Requires the DSH desktop client or `dsh web`. Replace the profile name with your
 ### From GitHub
 
 ```sh
-dsh plugin --profile desktop add github:<your-github-user>/dsh-plugin-simple-delete-session
+dsh plugin --profile desktop add github:WovenJunct/dsh-plugin-simple-delete-session
 ```
+
+(The repository lives at https://github.com/WovenJunct/dsh-plugin-simple-delete-session — replace `WovenJunct` with your own user if you forked it.)
 
 ### From a local checkout
 

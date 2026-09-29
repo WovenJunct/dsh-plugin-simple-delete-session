@@ -37,8 +37,10 @@
 ### 从 GitHub 安装
 
 ```sh
-dsh plugin --profile desktop add github:<你的GitHub用户名>/dsh-plugin-simple-delete-session
+dsh plugin --profile desktop add github:WovenJunct/dsh-plugin-simple-delete-session
 ```
+
+（本仓库就在 https://github.com/WovenJunct/dsh-plugin-simple-delete-session ；fork 的话把 `WovenJunct` 换成你自己的用户名。）
 
 ### 从本地目录安装
 
