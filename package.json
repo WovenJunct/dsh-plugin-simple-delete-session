@@ -1,0 +1,75 @@
+{
+  "name": "dsh-plugin-simple-delete-session",
+  "version": "0.2.0",
+  "description": "DeepSeek Harness (DSH) plugin: permanently delete a workspace session from the sidebar session menu, with a two-step confirmation. 彻底删除 DSH 工作区会话（侧边栏会话菜单 → 删除会话，二次确认，不可恢复）。",
+  "type": "module",
+  "license": "MIT",
+  "author": "WovenJunct",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src/",
+    "lib/",
+    "docs/",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WovenJunct/dsh-plugin-simple-delete-session.git"
+  },
+  "homepage": "https://github.com/WovenJunct/dsh-plugin-simple-delete-session#readme",
+  "bugs": {
+    "url": "https://github.com/WovenJunct/dsh-plugin-simple-delete-session/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "session",
+    "delete-session",
+    "hard-delete",
+    "sidebar",
+    "conversation"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    },
+    "engines": {
+      "dsh": ">=0.1.0-rc.6"
+    }
+  },
+  "scripts": {
+    "verify": "node verify/verify.mjs",
+    "check": "node --check src/index.js && node --check src/disk.js && node --check lib/client.js"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*",
+    "@deepseek-ai/dsh-client-ui-slots": "*",
+    "@deepseek-ai/dsh-client-ui-primitives": "*"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-client-ui-slots": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-client-ui-primitives": {
+      "optional": true
+    }
+  }
+}

@@ -1,0 +1,5 @@
+# Keep every text file LF everywhere: this package is loaded verbatim by Node
+# and by the DSH desktop client on Windows, macOS and Linux.
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.png binary
