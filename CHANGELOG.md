@@ -3,6 +3,12 @@
 All notable changes to this plugin are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) · versioning: [SemVer](https://semver.org/).
 
+## [0.2.1] — 2026-09-30
+
+### Changed
+
+- README install instructions now name the real repository (`github:WovenJunct/dsh-plugin-simple-delete-session`) instead of a placeholder user.
+
 ## [0.2.0] — 2026-09-30
 
 Verified on DSH desktop **0.2.0-rc.1** (Windows).
